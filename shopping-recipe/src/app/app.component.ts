@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'shopping-recipe';
+
+  selectedFeature = 'recipe';
+  
+  getNavigation(feature : string)
+  {
+    
+    this.selectedFeature = feature;
+    console.log(feature);
+  }
+ 
 }
